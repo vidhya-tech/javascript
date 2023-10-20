@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <h1>check the array if it is reversed</h1>
+      <label for="name">ENTER THE NAME </label>
+      <input type="text" id="n1"><br>
+      <button onclick="f1()">check it !</button>
+      <script>
+            function f1()
+            {
+               a =document.getElementById("n1").value;
+               document.write(a,"<br>")
+               b=a.length;
+               c=b-1;
+               n =""; 
+               
+             for(i=c; i>=0; i--)
+             { 
+                n+= a[i]; 
+                
+                } 
+                document.write(n,"<br>")
+                if(n==a)
+              { 
+                  document.write("true","<br>")
+              }
+            else
+            { 
+                  document.write("false")
+            } 
+
+
+            }
+      </script>
+      
+</body>
+</html>
