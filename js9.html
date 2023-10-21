@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <h1>  Create a small calculator which performs operations such as Addition, Subtraction, Multiplication and Division</h1>
+      <label for="calc">ENTER THE VALUE</label>
+      <input type="num1" id="num1"> <input type="num1" id="num2"><br>
+      <button type="text" onclick="f1()">add</button><br>
+      <button type="text" onclick="f2()">sub</button><br>
+      <button type="text" onclick="f3()">mult</button><br>
+      <button type="text" onclick="f4()">div</button><br>
+      <p id="show"></p>
+      <script>
+            function f1()
+            {
+                  a = parseInt(document.getElementById("num1").value);
+                  b = parseInt(document.getElementById("num2").value);
+                  document.getElementById("show").innerHTML = a + b ;
+            }
+            function f2()
+            {
+                  a = parseInt(document.getElementById("num1").value);
+                  b = parseInt(document.getElementById("num2").value);
+                  document.getElementById("show").innerHTML =  a - b ;
+            }
+            function f3()
+            {
+                  a = parseInt(document.getElementById("num1").value);
+                  b = parseInt(document.getElementById("num2").value);
+                  document.getElementById("show").innerHTML = a * b ;
+            }
+            function f4()
+            {
+                  a = parseInt(document.getElementById("num1").value);
+                  b = parseInt(document.getElementById("num2").value);
+                  document.getElementById("show").innerHTML = a /b ;
+            }
+      </script>
+</body>
+</html>
