@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Leading and Trailing Spaces</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="removeSpaces()">Remove Spaces</button>
+    <p id="result"></p>
+
+    <script>
+        function removeSpaces() {
+            // Get the input string from the input element
+            var inputElement = document.getElementById("inputString");
+            var inputString = inputElement.value;
+
+            // Remove leading and trailing spaces
+            var trimmedString = inputString.trim();
+
+            // Display the result
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = "Original String: " + inputString + "\nTrimmed String: " + trimmedString;
+        }
+    </script>
+</body>
+</html>
