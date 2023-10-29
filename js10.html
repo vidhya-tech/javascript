@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupees Denomination</title>
+</head>
+<body>
+    <h2>Enter a value in Rupees:</h2>
+    <input type="number" id="inputvalue">
+    <button onclick="calculate()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            const inputValue = document.getElementById("inputvalue").value;
+            const n = parseFloat(inputValue);
+            let h = Math.floor(n / 100);
+            n = n - h * 100;
+            let f = Math.floor(n / 50);
+            n = n - f * 50;
+            let tw = Math.floor(n / 20);
+            n = n - tw * 20;
+            let t = Math.floor(n / 10);
+            n = n - t * 10;
+            let fi = Math.floor(n / 5);
+            n = n - fi * 5;
+            let two = Math.floor(n / 2);
+            n = n - two * 2;
+            let one = Math.floor(n / 1);
+
+            const result = "Hundreds="+h+"<br>Fifties="+f+"<br>Twenties="+tw+"<br>Tens="+t+"<br>Fives="+fi+"<br>Twos="+two+"<br>Ones="+one;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
