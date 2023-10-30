@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Current Date</title>
+</head>
+<body>
+    <h1>Display Current Date</h1>
+    <p id="date"></p>
+
+    <script>
+        
+        const currentDate = new Date();
+
+        const dateAsString = currentDate.toDateString();
+
+    
+        const dateElement = document.getElementById("date");
+        dateElement.textContent = dateAsString;
+    </script>
+</body>
+</html>
