@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram Checker</title>
+</head>
+<body>
+    <h2>Check if two strings are anagrams</h2>
+    <input type="text" id="input1" placeholder="Enter the first string">
+    <input type="text" id="input2" placeholder="Enter the second string">
+    <button onclick="checkAnagrams()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkAnagrams() {
+            const a= document.getElementById("input1").value;
+            const b = document.getElementById("input2").value;
+
+            const c = a.split('').sort().join('');
+            const d = b.split('').sort().join('');
+
+            if (c === d) {
+                document.getElementById("result").textContent = "true";
+            } else {
+                document.getElementById("result").textContent = "false.";
+            }
+        }
+    </script>
+</body>
+</html>
