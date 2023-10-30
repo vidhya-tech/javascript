@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="date1">
+    <input type="date" id="date2">
+    <button onclick="comparedates()">submit</button>
+    <p id="result"></p>
+
+    <script>
+        function comparedates()
+        {
+            let date1input=document.getElementById("date1");
+            let date2input=document.getElementById("date2");
+            const resultElement = document.getElementById("result");
+
+            let date1=new Date(date1input.value);
+            let date2=new Date(date2input.value);
+
+            if(date1<date2){
+              resultElement.textContent  ="date 1 is earlier than date2";
+            }
+            
+            else if(date1>date2){
+                resultElement.textContent="date 1 is later than date2";
+            }
+            else{
+               resultElement.textContent="both are same date";
+            }
+        }
+    </script>
+</body>
+</html>
