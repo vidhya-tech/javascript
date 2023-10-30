@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Remove Character from String</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Remove Character from String</h1>
-    
-    <label for="inputString">Enter a string:</label>
-    <input type="text" id="inputString">
-    
-    <label for="characterToRemove">Character to remove:</label>
-    <input type="text" id="Remove">
-    
-    <button onclick="removeCharacter()">Remove</button>
-    
-    <p>Result: <span id="result"></span></p>
+  <input type="text" id="input">
 
-    <script>
-        function removeCharacter() {
-            let inputString = document.getElementById("inputString").value;
-            let characterToRemove = document.getElementById("Remove").value;
-            
-            let result = '';
-            for (let i = 0; i < inputString.length; i++) {
-                if (inputString[i] !== characterToRemove) {
-                    result += inputString[i];
-                }
-            }
-            
-            document.getElementById("result").textContent = result;
+  <button onclick="fun()">click</button>
+   <p id="result"></p>
+
+   <script>
+   function fun()
+   {
+    let input=document.getElementById("input").value;
+     Character={};
+
+     for(let i=0;i<input.length;i++){
+        const char=input[i];
+        if(Character[char]){
+            character[char]++;
+
+        }else{
+            character[char]=1;
         }
-    </script>
+     }
+    
+   }
+
+   </script>
+  
 </body>
 </html>
