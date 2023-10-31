@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Whitespaces from Text</title>
+</head>
+<body>
+    <h2>Remove Whitespaces from Text</h2>
+    <textarea id="textInput" placeholder="Enter text with whitespaces"></textarea>
+    <button onclick="removeWhitespaces()">Remove Whitespaces</button>
+    <p id="output"></p>
+
+    <script>
+        function removeWhitespaces() {
+            const textInput = document.getElementById("textInput").value;
+            const output = document.getElementById("output");
+
+            if (textInput) {
+                const cleanedText = textInput.trim(); // Replace all whitespaces
+                output.innerText = "Text without whitespaces: " + cleanedText;
+            } else {
+                output.innerText = "Please enter some text.";
+            }
+        }
+    </script>
+</body>
+</html>
